@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Web Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include the <model-viewer> polyfill -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our AR Web Store</h1>
+    </header>
+    <main>
+        <section class="product">
+            <div class="product-thumbnail">
+                <img src="product-image.jpg" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h2>Product Name</h2>
+                <p>Product description goes here. This is a great product that you can view in augmented reality.</p>
+                <model-viewer src="product-3d-model.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" poster="poster-image.jpg" alt="A 3D model of the product" shadow-intensity="1" camera-controls auto-rotate></model-viewer>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AR Web Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
